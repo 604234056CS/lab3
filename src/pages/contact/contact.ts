@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { modelGroupProvider } from '@angular/forms/src/directives/ng_model_group';
 
 @Component({
   selector: 'page-contact',
@@ -8,6 +9,10 @@ import { NavController } from 'ionic-angular';
 export class ContactPage {
 
   constructor(public navCtrl: NavController) {
+  }
+    goPrev(){
+      this.navCtrl.pop();
+    
 
   }
 

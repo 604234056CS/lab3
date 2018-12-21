@@ -1,3 +1,4 @@
+import { ContactPage } from './../contact/contact';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -10,5 +11,14 @@ export class AboutPage {
   constructor(public navCtrl: NavController) {
 
   }
+
+  goPrev(){
+    this.navCtrl.pop();
+ 
+    }
+    gocontact(){
+      this.navCtrl.push(ContactPage);
+   
+      }
 
 }
